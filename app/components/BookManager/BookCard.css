@@ -1,0 +1,65 @@
+.bookCard {
+  padding: 0.5em; /* prevent margin collapsing */
+  border-radius: 0.3em;
+  -webkit-user-select: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+}
+
+.bookCard.selected {
+  background-color: #cae2ff;
+}
+
+.bookCard.unselected {
+}
+
+.bookCard.selectedUnfocused {
+  background-color: #e7e9ec;
+}
+
+.bookCard.editing {
+}
+
+input {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+
+  /* Browsers have different default form fonts */
+  font-size: 13px;
+  font-family: inherit;
+}
+
+.bookCard .title {
+  display: inline;
+  padding-right: 1em;
+}
+
+.bookCard .author {
+  display: inline;
+  color: #818488;
+}
+
+.bookCard .tags {
+  display: inline;
+  color: #818488;
+  text-align: right;
+  flex: 3 0 auto !important;
+}
+
+.bookCard .textEditable {
+  cursor: default;
+  outline: none;
+  flex: 1 0 auto;
+}
+
+.bookCard .editingReal {
+  cursor: text !important;
+}

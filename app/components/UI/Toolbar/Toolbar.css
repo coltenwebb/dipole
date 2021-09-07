@@ -1,0 +1,23 @@
+.toolbar {
+  flex: 0 1 auto;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  position: relative;
+
+  padding: .2em;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.titleBar {
+  -webkit-app-region: drag;
+}
+
+.inset {
+  padding-top: 2em;
+}

@@ -1,0 +1,103 @@
+.ankiCardView {
+  flex: 1 1 auto;
+  -webkit-user-select: none;
+
+  margin-left: 1em;
+  margin-right: 1em;
+  /*padding: 1em; /* prevent margin collapsing */
+  border-top: 1px solid #eff0f2;
+
+  /* without this, the div inserts a span styled with the font family... */
+  font-family: 'system-ui';
+
+  transition: opacity .1s;
+  opacity: 1;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.ankiCardView.hidden {
+  opacity: 0;
+}
+
+
+.editor {
+  flex: 1 1 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.buttons {
+  flex: 0 1 auto;
+  align-self: center;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.ankiCardView:last-child {
+  border-bottom: 1px solid #eff0f2;
+}
+
+.ankiCardView .tools {
+  flex: 1 1 auto;
+  height: 0em;
+  padding: 0em 1em;
+
+  visibility: hidden;
+  opacity: 0%;
+
+  transition: .1s;
+}
+
+.ankiCardView.isEditing .tools {
+  flex: 1 1 auto;
+  height: 0em;
+  padding: 1em 1em;
+
+  visibility: visible;
+  opacity: 100%;
+}
+
+.ankiCardView .contentEditable {
+  flex: 1 1 auto;
+  padding: 1em;
+
+  outline: none;
+}
+
+/* When its empty, we insert a placeholder. */
+.contentEditable:empty:before {
+  content: 'Note';
+  pointer-events: none;
+  color: #979aa0;
+}
+
+
+.button {
+  margin: 0.2em;
+  padding: 0.2em;
+  width: 1em;
+  height: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #979aa0;
+  border: 1px solid transparent;
+  border-radius: 0.2em;
+  animation-name: fade-in;
+  animation-duration: .1s;
+}
+
+.button:hover {
+  border-color: #eff0f2;
+}
+
+.button:active {
+  background-color: #eff0f2;
+}
+

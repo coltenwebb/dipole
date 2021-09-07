@@ -1,0 +1,14 @@
+.text {
+  flex: 0 1 auto;
+  color: #979aa0;
+
+  /* margin: .5em; */
+  align-self: center;
+}
+
+.titleText {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  pointer-events: none;
+}

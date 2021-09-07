@@ -1,0 +1,17 @@
+.toolbarButton {
+  flex: 0 1 auto;
+
+  margin: 0.2em;
+  padding: 0.2em;
+  color: #979aa0;
+  border: 1px solid transparent;
+  border-radius: 0.2em;
+}
+
+.toolbarButton:hover {
+  border-color: #eff0f2;
+}
+
+.toolbarButton:active {
+  background-color: #eff0f2;
+}

@@ -1,0 +1,101 @@
+/* INDIVIDUAL HIGHLIGHT ANKICARDS */
+
+.highlightCard {
+  padding: 0.05px; /* prevent margin collapsing */
+  border-radius: 0.3em;
+
+  -webkit-user-select: none;
+  outline: none;
+
+  display: flex;
+  flex-direction: column;
+  transition: margin 0.2s;
+}
+
+.highlightCard.selected {
+  background-color: #f0efef;
+}
+
+.highlightCard:focus.selected {
+  background-color: #cae2ff;
+}
+
+.highlightCard.editing {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.12);
+  background-color: inherit;
+  -webkit-user-select: text;
+  margin-top: 2em;
+  margin-bottom: 2em;
+
+  transition: margin 0.2s, background-color 0.1s;
+  background-color: white;
+}
+
+/* EACH OF THE GROUPS OF CONTROLS */
+
+.cardRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+.noBottomMargin {
+  margin-bottom: 0 !important;
+}
+
+.highlightText {
+  flex: 1 1 auto;
+  margin: 1em;
+}
+
+.infoText {
+  flex: 1 1 auto;
+  margin: 1em;
+  color: #818488;
+}
+
+.buttonGroup {
+  flex: 1 0 auto;
+  margin: 1em;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+
+.left {
+  align-self: left;
+}
+
+.right {
+  text-align: right;
+}
+
+/* EACH OF THE INDIVIDUAL BUTTONS */
+
+.button {
+  margin: 0.2em;
+  padding: 0.2em;
+  color: #979aa0;
+  border: 1px solid transparent;
+  border-radius: 0.2em;
+  animation-name: fade-in;
+  animation-duration: .1s;
+}
+
+.button:hover {
+  border-color: #eff0f2;
+}
+
+.button:active {
+  background-color: #eff0f2;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

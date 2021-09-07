@@ -1,0 +1,23 @@
+.pageContainer {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.viewerContainer {
+  flex: 0 1 auto;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.viewer {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: row;
+}

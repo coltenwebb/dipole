@@ -1,0 +1,14 @@
+{
+  "name": "dipole",
+  "productName": "Dipole",
+  "version": "1.1.0",
+  "description": "Application for managing the Anki cards that are produced while reading books",
+  "main": "./main.prod.js",
+  "author": "Colten Webb <coltenwebb@gmail.com> (https://colten.me)",
+  "scripts": {
+    "electron-rebuild": "node -r ../internals/scripts/BabelRegister.js ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "yarn electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}

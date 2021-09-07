@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  flex-flow: row;
+  align-items: stretch;
+}
+
+.tableGroupContainer {
+  flex: 1 0 auto;
+  height: 100vh;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}

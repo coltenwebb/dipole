@@ -1,0 +1,26 @@
+.sidebar {
+  /* width: 25vw; */
+  width: 25vw;
+  resize: horizontal;
+  flex: 0 0 auto;
+
+  overflow-y: scroll;
+  overflow-x: hidden;
+  -webkit-user-select: none;
+  box-sizing: border-box;
+  background-color:#F5F6F8;
+  align-self: stretch;
+
+  padding-top: 2em;
+  -webkit-app-region: drag;
+}
+
+.sidebarEntry {
+  background-color: #DDE1E6;
+  color: rgb(71, 71, 71);
+  border: 1px solid transparent;
+  border-radius: 0.2em;
+  padding: 0.2em;
+  margin: 1em;
+  font-weight: 600;
+}
